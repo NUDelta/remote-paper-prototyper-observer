@@ -18,7 +18,7 @@ Template.dashboard.events({
     'click .btn-danger': function (event) {
         event.preventDefault();
         event.stopPropagation();
-        Observations.update(event.target.value, {$inc: {incorrect: -1}});
+        Observations.update(event.target.value, {$inc: {incorrect: 1}});
     },
 
 });
