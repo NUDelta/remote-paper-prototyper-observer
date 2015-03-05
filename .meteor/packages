@@ -7,3 +7,8 @@
 meteor-platform
 autopublish
 insecure
+mizzao:bootstrap-3
+iron:router
+fourseven:scss
+reactive-var
+underscore

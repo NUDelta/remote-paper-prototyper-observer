@@ -1,0 +1,32 @@
+<template name='observationList'>
+  <section id='observationList'>
+    <div class='container-fluid'>
+      <div class='row'>
+        <div class='col-md-8 col-md-offset-2'>
+          <div class='jumbotron'>
+            <h2 class='text-center'> Observations </h2>
+            <ul class='list'>
+            {{#each observations}}
+              <li class='item'>
+                <a href='/observe/{{observation}}/'><h3> {{observation}} </h3></a>
+              </li>
+            {{/each}}
+            </ul>
+            <div class='item item-adder'>
+              <div class='adder-wait'>
+                <h3> + </h3>
+              </div>
+              <div class='adder-add'>
+                <form>
+                  <input name='name' type='text' placeholder='enter a name observation name here'>
+                  <input class='pull-right btn btn-success' type='submit' value='create'>
+                  <button class='pull-right btn btn-danger' id='cancel'>cancel</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
